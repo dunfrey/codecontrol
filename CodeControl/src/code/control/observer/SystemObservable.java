@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import code.control.ciphers.CipherClass;
 
-public class Sistema implements Observado {
+public class SystemObservable implements Observable {
 
-    private List<Observador> observadores;
+    private List<Observer> observadores;
     private String textoCriptografado;
     private String tmp = "";
 
-    public Sistema() {
+    public SystemObservable() {
         this.observadores = new ArrayList<>();
     }
 
@@ -20,12 +20,12 @@ public class Sistema implements Observado {
     }
 
     @Override
-    public void incluirObservador(Observador obs) {
+    public void incluirObservador(Observer obs) {
         this.observadores.add(obs);
     }
 
     @Override
-    public void removerObservador(Observador obs) {
+    public void removerObservador(Observer obs) {
         int ind = this.observadores.indexOf(obs);
         if (ind >= 0) {
             this.observadores.remove(obs);
@@ -34,7 +34,7 @@ public class Sistema implements Observado {
 
     @Override
     public void notificarObservadores() {
-        for (Observador observador : observadores) {
+        for (Observer observador : observadores) {
 
             CipherClass c = new CipherClass();
             String returnDecypher = c.decipher(textoCriptografado);

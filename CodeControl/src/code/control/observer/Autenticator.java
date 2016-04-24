@@ -10,9 +10,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-public class Autenticador implements Observador {
+public class Autenticator implements Observer {
 
-    public Autenticador(Observado obs) {
+    public Autenticator(Observable obs) {
         obs.incluirObservador(this);
     }
 
@@ -35,7 +35,7 @@ public class Autenticador implements Observador {
                     Desbloqueio d = new Desbloqueio();
                     d.executa();
                 } catch (Exception ex) {
-                    Logger.getLogger(Autenticador.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Autenticator.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         });

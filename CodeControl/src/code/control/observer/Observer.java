@@ -1,6 +1,6 @@
 package code.control.observer;
 
-public interface Observador {
+public interface Observer {
     
     public void atualizar(String string);
     
