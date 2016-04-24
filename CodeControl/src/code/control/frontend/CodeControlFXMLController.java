@@ -7,8 +7,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import code.control.observer.Autenticador;
-import code.control.observer.Sistema;
+import code.control.observer.Autenticator;
+import code.control.observer.SystemObservable;
 import code.control.qr.aciona.GeradorQR;
 import code.control.qr.aciona.LeitorQR;
 import java.io.IOException;
@@ -62,9 +62,9 @@ public class CodeControlFXMLController implements Initializable {
     private void autenticarUsuario(ActionEvent evento) throws InterruptedException {
         if (controle == 1) {
             tfRetornoErro.setText("Apresente o QR-Code a qualquer momento.");
-            Sistema notificador = new Sistema();
-            LeitorQR sl = new LeitorQR(notificador);
-            Autenticador u = new Autenticador(notificador);
+            SystemObservable notificator = new SystemObservable();
+            LeitorQR sl = new LeitorQR(notificator);
+            Autenticator u = new Autenticator(notificator);
 
             controle = 0;
         } else {
@@ -94,6 +94,6 @@ public class CodeControlFXMLController implements Initializable {
 //        Scene scene = new Scene(root);
 //        Stage secondStage = new Stage();
 //        secondStage.setScene(scene);
-//        secondStage.setTitle("Autenticador");
+//        secondStage.setTitle("Autenticator");
 //        secondStage.show();
 //    }
