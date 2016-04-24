@@ -9,8 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import code.control.observer.Autenticator;
 import code.control.observer.SystemObservable;
-import code.control.qr.aciona.GeradorQR;
-import code.control.qr.aciona.LeitorQR;
+import code.control.qr.aciona.GeneratorQR;
+import code.control.qr.aciona.ReaderQR;
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -37,7 +37,7 @@ public class CodeControlFXMLController implements Initializable {
 
     @FXML
     private void cadastrarUsuario(ActionEvent evento) {
-        GeradorQR spynQR = new GeradorQR();
+        GeneratorQR spynQR = new GeneratorQR();
         String nome = tfNome_cadastrar.getText();
         if (!nome.equals("")) {
             spynQR.GeradorQR(nome);
@@ -63,7 +63,7 @@ public class CodeControlFXMLController implements Initializable {
         if (controle == 1) {
             tfRetornoErro.setText("Apresente o QR-Code a qualquer momento.");
             SystemObservable notificator = new SystemObservable();
-            LeitorQR sl = new LeitorQR(notificator);
+            ReaderQR sl = new ReaderQR(notificator);
             Autenticator u = new Autenticator(notificator);
 
             controle = 0;
