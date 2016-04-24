@@ -3,7 +3,7 @@ package code.control.observer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import code.control.criptografia.Criptografia;
+import code.control.ciphers.CipherClass;
 
 public class Sistema implements Observado {
 
@@ -36,10 +36,10 @@ public class Sistema implements Observado {
     public void notificarObservadores() {
         for (Observador observador : observadores) {
 
-            Criptografia c = new Criptografia();
-            String retorno = c.decifra(textoCriptografado);
+            CipherClass c = new CipherClass();
+            String returnDecypher = c.decipher(textoCriptografado);
 
-            if (retorno.equals(tmp)) {
+            if (returnDecypher.equals(tmp)) {
                 try {
                     System.out.print("Retire o QR-Code e aguarde");
                     TimeUnit.SECONDS.sleep(2); System.out.print(".");
@@ -49,8 +49,8 @@ public class Sistema implements Observado {
                     this.tmp = "";
                 } catch (InterruptedException e) { }
             } else {
-                this.tmp = retorno;
-                observador.atualizar(new String(retorno));
+                this.tmp = returnDecypher;
+                observador.atualizar(new String(returnDecypher));
             }
         }
     }
