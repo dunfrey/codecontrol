@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="301.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.control.frontend.CodeControlFXMLController">
+   <children>
+      <Pane layoutX="447.0" layoutY="193.0" prefHeight="113.0" prefWidth="116.0">
+         <children>
+            <Label layoutX="55.0" layoutY="59.0" opacity="0.07" rotate="144.0" text="L">
+               <font>
+                  <Font name="QR font tfb" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="5.0" layoutY="2.0" prefHeight="301.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="82.0" layoutY="276.0" opacity="0.13" rotate="-60.9" text="u">
+               <font>
+                  <Font name="QR font tfb" size="61.0" />
+               </font>
+            </Label>
+            <Label layoutX="-27.0" layoutY="164.0" opacity="0.15" rotate="-59.7" text="e">
+               <font>
+                  <Font name="QR font tfb" size="67.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="260.0" opacity="0.27" rotate="45.0" text="C">
+               <font>
+                  <Font name="QR font tfb" size="65.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="263.0" opacity="0.21" rotate="-45.0" text="O">
+               <font>
+                  <Font name="QR font tfb" size="44.0" />
+               </font>
+            </Label>
+            <Label opacity="0.14" text="k">
+               <font>
+                  <Font name="QR font tfb" size="65.0" />
+               </font>
+            </Label>
+            <Label layoutX="-19.0" layoutY="199.0" opacity="0.24" rotate="-165.4" text="a">
+               <font>
+                  <Font name="QR font tfb" size="67.0" />
+               </font>
+            </Label>
+            <Label layoutX="-13.0" layoutY="91.0" opacity="0.14" rotate="-55.0" text="f">
+               <font>
+                  <Font name="QR font tfb" size="79.0" />
+               </font>
+            </Label>
+            <Label layoutX="-25.0" layoutY="245.0" opacity="0.28" text="w">
+               <font>
+                  <Font name="QR font tfb" size="63.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="221.0" opacity="0.13" text="r">
+               <font>
+                  <Font name="QR font tfb" size="59.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="161.0" opacity="0.14" text="t">
+               <font>
+                  <Font name="QR font tfb" size="66.0" />
+               </font>
+            </Label>
+            <Label layoutX="-22.0" layoutY="34.0" opacity="0.16" rotate="72.9" text="y">
+               <font>
+                  <Font name="QR font tfb" size="96.0" />
+               </font>
+            </Label>
+            <Label layoutX="-3.0" layoutY="-10.0" opacity="0.26" rotate="26.6" text="i">
+               <font>
+                  <Font name="QR font tfb" size="58.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="-18.0" opacity="0.06" rotate="49.4" text="p">
+               <font>
+                  <Font name="QR font tfb" size="59.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="-39.0" opacity="0.13" rotate="59.9" text="s">
+               <font>
+                  <Font name="QR font tfb" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="212.0" layoutY="212.0" text="Code Control">
+         <font>
+            <Font name="Android" size="33.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="211.0" prefHeight="3.0" prefWidth="433.0" />
+      <Separator layoutX="346.0" layoutY="249.0" prefWidth="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="31.0" layoutX="125.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" width="276.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Rectangle>
+      <Button fx:id="btAdicionarUsuario" layoutX="416.0" layoutY="59.0" mnemonicParsing="false" onAction="#cadastrarUsuario" prefWidth="100.0" text="Cadastrar" />
+      <Button fx:id="btRemoverUsuario" layoutX="418.0" layoutY="115.0" mnemonicParsing="false" onAction="#listarUsuarios" prefHeight="38.0" prefWidth="98.0" text="Remover" />
+      <Button fx:id="btAutenticarUsuario" contentDisplay="CENTER" defaultButton="true" layoutX="118.0" layoutY="115.0" mnemonicParsing="false" onAction="#autenticarUsuario" prefHeight="38.0" prefWidth="284.0" text="Autenticador de QR-Code" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Carlito Bold" size="15.0" />
+         </font></Button>
+      <TextField fx:id="tfNome_cadastrar" layoutX="118.0" layoutY="59.0" prefHeight="25.0" prefWidth="284.0" />
+      <Label layoutX="71.0" layoutY="64.0" text="Nome: " />
+      <TextField fx:id="tfRetornoErro" alignment="CENTER" disable="true" layoutX="212.0" layoutY="262.0" prefHeight="25.0" prefWidth="335.0" promptText="-----" />
+   </children>
+</AnchorPane>
