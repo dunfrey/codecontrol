@@ -7,4 +7,5 @@ Code Control é um sistema de controle de acesso físico, utilizando a tecnologi
 ----
 
 On several occasions of everyday life is necessary confidentiality and information protection, as well as maintain physical access control certain environments, in order to ensure the local order, allowing only authorized persons are admitted. There are numerous security systems, but their costs are generally high or can not ensure the desired safety and high speed authentication. 
+
 Code Control ia a physical access control system using the QR-Code technology with asymmetric cryptography, based on research on existing solutions and the various methods used for authentication by exploiting vulnerabilities. The system created provides authenticity, portability and low cost, as well as security and confidentiality.
