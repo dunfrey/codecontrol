@@ -10,7 +10,7 @@ Feel free to download or clone the source code, or more, improve the system:
 
 ### Why Code Control? ###
  - **Uses QR Codes** to access keys
- - **Criptography assimetric** it provides authenticity and confidentiality.
+ - **Criptography assimetric** it provides authenticity and confidentiality in QR Codes. The QR Codes are encrypted before generated.
  - **Interface JavaFX** 
  - **Open-source** to improve the system
  - **Arduino** to unlock the door
