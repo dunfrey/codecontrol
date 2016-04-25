@@ -9,15 +9,15 @@ Feel free to download or clone the source code, or more, improve the system:
     https://github.com/dunfrey/codecontrol.git
 
 ### Why Code Control? ###
- - **Uses QR Codes** to access keys
+ - **Uses QR Codes** to access keys.
  - **Criptography assimetric** it provides authenticity and confidentiality in QR Codes. The QR Codes are encrypted before generated.
  - **Interface JavaFX** 
- - **Open-source** to improve the system
- - **Arduino** to unlock the door
+ - **Open-source** to improve the system.
+ - **Arduino** to unlock the door.
 
 ### Vulnerabilities? ###
- - **Ethernet atacks**
- - **Social engineering** using QR Codes from other users
+ - **Ethernet atacks** Attacks on data ranging from computer to the Arduino via ethernet cable.
+ - **Social engineering** using QR Codes from other users.
  
 ### External Libraries ###
  
