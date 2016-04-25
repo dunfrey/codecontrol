@@ -1,9 +1,9 @@
 package code.control.observer;
 
-import code.control.jpa.entidade.Cliente;
+import code.control.jpa.entity.Client;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import code.control.observer.arduino.Desbloqueio;
+import code.control.observer.arduino.UnlockDoor;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -24,15 +24,15 @@ public class Autenticator implements Observer {
         em.getTransaction().begin();
 
         Query consulta = em.createQuery("select cliente from Cliente cliente");
-        List<Cliente> clientes = consulta.getResultList();
+        List<Client> clientes = consulta.getResultList();
         em.getTransaction().commit();
         em.close();
 
         clientes.stream().forEach((cliente) -> {
-            if (!retorno.equals(cliente.getNome())) {
+            if (!retorno.equals(cliente.getName())) {
             } else {
                 try {
-                    Desbloqueio d = new Desbloqueio();
+                    UnlockDoor d = new UnlockDoor();
                     d.executa();
                 } catch (Exception ex) {
                     Logger.getLogger(Autenticator.class.getName()).log(Level.SEVERE, null, ex);
