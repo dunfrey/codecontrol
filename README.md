@@ -1,11 +1,15 @@
 # Code Control
 
-Em diversas ocasiões da vida cotidiana é necessário o sigilo ou proteção de informações, como também manter o controle de acesso físico de determinados ambientes, com objetivo de assegurar a ordem local, permitindo que apenas pessoas autorizadas sejam admitidas. Existem inúmeros sistemas de segurança, porém seus custos geralmente são elevados ou não podem garantir a segurança desejada e a alta velocidade de autenticação. 
+Code Control is a free physical access control systemwhich is completely written in Java. It offers features like QR-Code technology and asymmetric cryptography in your composition to access control.
 
-Code Control é um sistema de controle de acesso físico, utilizando a tecnologia QR-Code com criptografia assimétrica, baseando-se em pesquisas sobre as soluções existentes e os variados métodos adotados para autenticação, explorando as vulnerabilidades. O sistema criado fornece autenticidade, portabilidade e baixo custo, além de segurança e confidencialidade.
+For more details, take a look at the source or the documentation (writed in portuguese).
 
-----
+Feel free to download or clone the source code, or more, improve the system: 
 
-On several occasions of everyday life is necessary confidentiality and information protection, as well as maintain physical access control certain environments, in order to ensure the local order, allowing only authorized persons are admitted. There are numerous security systems, but their costs are generally high or can not ensure the desired safety and high speed authentication. 
+    https://github.com/dunfrey/codecontrol.git
 
-Code Control is a physical access control system using the QR-Code technology with asymmetric cryptography, based on research on existing solutions and the various methods used for authentication by exploiting vulnerabilities. The system created provides authenticity, portability and low cost, as well as security and confidentiality.
+### Why Code Control? ###
+ - **Uses QR Codes** to access keys
+ - **Criptography assimetric** it provides authenticity and confidentiality.
+ - **Interface JavaFX** 
+ - **Open-source** to improve the system
