@@ -84,7 +84,7 @@ public class SearchClientController implements Initializable {
         for (Client client : clients) {
 
             //inserir a consulta do banco aqui
-            dates.add(new TableModel(client.getId().intValue(), client.getNome()));
+            dates.add(new TableModel(client.getId().intValue(), client.getName()));
 
             tcCode.setCellValueFactory(new PropertyValueFactory("codigo"));
             tcName.setCellValueFactory(new PropertyValueFactory("nome"));
