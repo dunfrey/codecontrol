@@ -3,7 +3,7 @@ package code.control.observer.arduino;
 import java.io.DataOutputStream;
 import java.net.Socket;
 
-public class Desbloqueio {
+public class UnlockDoor {
 
     public void executa() throws Exception {
         Socket clientSocket;
