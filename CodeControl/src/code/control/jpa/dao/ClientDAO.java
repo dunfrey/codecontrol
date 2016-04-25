@@ -1,18 +1,18 @@
 package code.control.jpa.dao;
 
-import code.control.jpa.entidade.Cliente;
+import code.control.jpa.entity.Client;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class ClienteDAO {
+public class ClientDAO {
 
-    public void persistir(Cliente usuario) {
+    public void persist(Client client) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("CodeControlPU");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         try {
-            em.persist(usuario);
+            em.persist(client);
             em.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
@@ -22,12 +22,12 @@ public class ClienteDAO {
         }
     }
     
-    public void remover(Cliente usuario) {
+    public void remove(Client usuario) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("CodeControlPU");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         try {
-            Cliente temp = em.merge(usuario);
+            Client temp = em.merge(usuario);
             em.remove(temp);
             em.getTransaction().commit();
         } catch (Exception e) {
