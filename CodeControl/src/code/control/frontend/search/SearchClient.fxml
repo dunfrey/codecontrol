@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="287.0" prefWidth="245.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.control.frontend.pesquisa.PesquisaUsuarioController">
+   <children>
+      <TextField fx:id="tfIdClient" alignment="CENTER" layoutX="34.0" layoutY="221.0" prefHeight="25.0" prefWidth="82.0" promptText="ID" />
+      <Button fx:id="btRemove" layoutX="132.0" layoutY="221.0" mnemonicParsing="false" onAction="#remove" text="Remove" />
+      <TextField fx:id="tfReturnError" alignment="CENTER" disable="true" layoutX="12.0" layoutY="253.0" prefHeight="25.0" prefWidth="222.0" promptText="-" />
+      <TableView fx:id="tvConsult" layoutX="7.0" layoutY="8.0" prefHeight="206.0" prefWidth="232.0">
+        <columns>
+          <TableColumn fx:id="tcCode" prefWidth="39.0" text="ID" />
+          <TableColumn fx:id="tcName" prefWidth="192.0" text="NAME" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
