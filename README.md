@@ -13,3 +13,8 @@ Feel free to download or clone the source code, or more, improve the system:
  - **Criptography assimetric** it provides authenticity and confidentiality.
  - **Interface JavaFX** 
  - **Open-source** to improve the system
+ - **Arduino** to unlock the door
+
+### Vulnerabilities? ###
+ - **Ethernet atacks**
+ - **Social engineering** using QR Codes from other users
