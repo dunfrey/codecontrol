@@ -18,3 +18,11 @@ Feel free to download or clone the source code, or more, improve the system:
 ### Vulnerabilities? ###
  - **Ethernet atacks**
  - **Social engineering** using QR Codes from other users
+ 
+### External Libraries ###
+ 
+- **Webcam capture image**
+    https://github.com/sarxos/webcam-capture.git
+
+- **Generate QR Code**
+    https://github.com/zxing/zxing.git
