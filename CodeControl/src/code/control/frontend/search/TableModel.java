@@ -16,23 +16,23 @@ import javafx.beans.property.StringProperty;
  */
 public class TableModel{
     
-    private IntegerProperty codigo;
-    private StringProperty nome;
+    private IntegerProperty code;
+    private StringProperty name;
 
     public TableModel() {
     }
     
-    public TableModel(int codigo, String nome) {
-        this.codigo = new SimpleIntegerProperty(codigo);
-        this.nome = new SimpleStringProperty(nome);
+    public TableModel(int code, String name) {
+        this.code = new SimpleIntegerProperty(code);
+        this.name = new SimpleStringProperty(name);
     }
 
-    public IntegerProperty codigoProperty() {
-        return codigo;
+    public IntegerProperty codeProperty() {
+        return code;
     }
 
-    public StringProperty nomeProperty() {
-        return nome;
+    public StringProperty nameProperty() {
+        return name;
     }    
     
 }
