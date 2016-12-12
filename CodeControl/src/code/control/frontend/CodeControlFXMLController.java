@@ -49,12 +49,12 @@ public class CodeControlFXMLController implements Initializable {
 
     @FXML
     private void listarUsuarios(ActionEvent evento) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("./pesquisa/PesquisaUsuario.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("./search/SearchClient.fxml"));
         
         Scene scene = new Scene(root);
         Stage secondStage = new Stage();
         secondStage.setScene(scene);
-        secondStage.setTitle("Remover Usuário");
+        secondStage.setTitle("Remove User");
         secondStage.show();
     }
 
